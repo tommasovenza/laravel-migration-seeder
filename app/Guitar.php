@@ -13,6 +13,7 @@ class Guitar extends Model
             'pickup',
             'colore',
             'ponte',
-            'codice_id'
+            'codice_id',
+            'descrizione'
         ];
 }

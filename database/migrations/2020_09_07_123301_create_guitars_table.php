@@ -21,6 +21,7 @@ class CreateGuitarsTable extends Migration
             $table->string('colore');
             $table->string('ponte');
             $table->integer('codice_id');
+            $table->string('descrizione');
             $table->timestamps();
         });
     }

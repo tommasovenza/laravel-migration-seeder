@@ -15,9 +15,9 @@ class GuitarController extends Controller
     public function index()
     {
         
-        $guitar = Guitar::all(); 
+        $guitars = Guitar::all(); 
 
-        return view('guitars.index', compact('guitar'));
+        return view('guitars.index', ['guitar' => '$guitars']);
     }
 
     /**
