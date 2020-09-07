@@ -47,9 +47,13 @@ class GuitarController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
+    public function show(Guitar $id)
+    {   
+        $guitars = Guitar::all();
+
+        $guitar = $guitars->find($id);
+
+        return view('guitars.show', compact('guitar'));
     }
 
     /**

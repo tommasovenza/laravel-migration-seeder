@@ -12,6 +12,8 @@
         <li> Ponte: {{ $guitar->ponte}}</li>
         <li> Codice identificativo: {{ $guitar->codice_id }}</li>
         <li> descrizione: {{ $guitar->descrizione }}</li>
+
+        <a href="{{ route('guitars.show', $guitar)}}">vedi dettaglio</a>
     </ul>
 
     @endforeach
